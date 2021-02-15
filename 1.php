@@ -16,7 +16,6 @@ $params = array(
 $url = "https://api.vk.com/method/photos.get?" . http_build_query($params);
 $data = file_get_contents($url);
 $response = json_decode($data);
-$img = $response->response->items[0]->photo_604;
 
 
-echo $response;
+echo $data;
