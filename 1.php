@@ -20,4 +20,4 @@ $data_get_photo = file_get_contents($url_get_photo);
 $response_get_photo = json_decode($data_get_photo);
 $img = $response_get_photo->response->items[0]->id;
 
-echo $response_get_photo;
+echo $data_get_photo;
